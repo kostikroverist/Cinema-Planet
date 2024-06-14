@@ -1,8 +1,7 @@
-import React from "react";
 import Logo from "../Logo/Logo";
 import { NavLink } from "react-router-dom";
 
-const Header: React.FC = () => {
+const Header= () => {
   return (
     <div className="bg-white dark:bg-gray-800 flex  items-center w-screen  p-5  ">
       <Logo />

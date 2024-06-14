@@ -1,6 +1,4 @@
-import React from "react";
-
-const Logo: React.FC = () => {
+const Logo = () => {
   return (
     <div className="border border-gray-200 p-2 rounded-md shadow-lg shadow-orange-300">
       <div className="flex items-end gap-1">
