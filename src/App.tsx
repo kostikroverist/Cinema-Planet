@@ -1,14 +1,20 @@
+import { Route, Routes } from "react-router-dom";
+import Layout from "./layout/Layout";
+import MainPage from "./components/page/MainPage";
+import Movies from "./components/page/Movies";
+import TVShow from "./components/page/TVShow";
+import Genre from "./components/page/Genre";
+
 function App() {
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600">
-         <header>
-          <img src="../public/image-removebg-preview.png" alt="" />
-         </header>
-        </h1>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<MainPage />} />
+        <Route path="movies" element={<Movies />} />
+        <Route path="tvshow" element={<TVShow />} />
+        <Route path="genre" element={<Genre />} />
+      </Route>
+    </Routes>
   );
 }
 
